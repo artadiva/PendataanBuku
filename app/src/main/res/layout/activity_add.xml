@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pendataan Buku Perpustakaan"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="24dp"/>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/buku2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/title_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Judul"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/author_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Penulis"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/penerbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Penerbit"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/tahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        android:hint="Tahun"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text="Jumlah" />
+
+    <SeekBar
+        android:id="@+id/jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        />
+
+    <TextView
+        android:id="@+id/total_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Buku"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/jenis_buku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fiksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiksi" />
+
+        <RadioButton
+            android:id="@+id/non_fiksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non Fiksi" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/komik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Komik" />
+
+        <CheckBox
+            android:id="@+id/romance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romance" />
+
+        <CheckBox
+            android:id="@+id/horor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horor" />
+
+        <CheckBox
+            android:id="@+id/humor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Komedi/Humor" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/scifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sci-Fi" />
+
+        <CheckBox
+            android:id="@+id/sains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sains" />
+
+        <CheckBox
+            android:id="@+id/sejarah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sejarah" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+</LinearLayout>
